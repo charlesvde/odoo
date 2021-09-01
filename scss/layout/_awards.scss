@@ -1,0 +1,126 @@
+.od-awards{
+  display: block;
+  position: relative;
+  background-color: $blue-lightest;
+  padding-top: 12vh;
+  padding-bottom: 20vh;
+  overflow: hidden;
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120vw;
+    height: 80px;
+    background-color: white;
+    transform: rotate(-2deg);
+    left: -10vw;
+    bottom: -40px;
+  }
+  .container{
+    position: relative;
+    .badge{
+      font-size: 1rem;
+      font-weight: 800;
+      padding: 0.6rem 1rem;
+      margin-bottom: 2rem;
+    }
+    >p{
+      display: block;
+      position: relative;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 6rem;
+    }
+
+    //list
+    .row.od-awards__list{
+      position: relative;
+      flex-wrap: nowrap;
+      text-align: center;
+      margin: 0 -1rem;
+      //align-items: stretch;
+
+      > li{
+        display: block;
+        position: relative;
+        transition: $transition;
+        padding: 0 1rem;
+        //min-width: 250px;
+        &:nth-of-type(odd){
+          margin-top: 5rem;
+        }
+        &:hover{
+          text-decoration: none;
+          transform: translateY(-1rem);
+        }
+        a{
+          display: block;
+          position: relative;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+        .card{
+          padding: 4rem 3rem;
+          text-align: center;
+          border-radius: 10px !important;
+          border-color: darken($blue-lightest, 3) !important;
+          color: $black;
+          img{
+            display: block;
+            position: relative;
+            width: 90px;
+            height: auto;
+            margin: 0 auto;
+          }
+          img + p{
+            margin: 2rem auto;
+          }
+          p{
+            display: block;
+            position: relative;
+            text-align: center;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            color: $grey;
+            strong{
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: $black;
+            }
+            small{
+              font-size: 1.1rem;
+            }
+          }
+          .od-rating{
+            margin: 2rem auto;
+            div{
+              padding: 0;
+              i{
+                font-size: 1.3rem;
+                line-height: 1;
+                font-weight: 800;
+                margin: 0 0.2rem;
+                color: rgba($grey, 0.4);
+              }
+            }
+          }
+          .link.link-underline{
+            display: inline-block;
+            margin: 0 auto;
+            font-size: 1.3rem;
+            font-weight: 700;
+            line-height: 1;
+            padding-bottom: 0.6rem;
+            border-bottom: 2px solid $black;
+            transition: $transition;
+            &:hover{
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+}

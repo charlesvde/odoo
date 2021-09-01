@@ -1,0 +1,252 @@
+.od-banner{
+  display: block;
+  position: relative;
+  padding-top: 15vh;
+  padding-bottom: 25vh;
+  overflow: hidden;
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120vw;
+    height: 80px;
+    background-color: white;
+    transform: rotate(-2deg);
+    left: -10vw;
+    bottom: -40px;
+  }
+
+  .container{
+    padding: 0;
+  }
+
+  //left
+  .od-banner__left{
+    h1{
+      display: block;
+      max-width: 300px;
+    }
+    p{
+      display: block;
+      max-width: 300px;
+      font-size: 1.6rem;
+      margin-bottom: 3rem;
+    }
+    //button
+    .btn{
+      font-size: 1.4rem;
+      line-height: 1;
+      font-weight: 600;
+      padding: 1.2rem 2rem;
+      white-space: nowrap;
+      border-radius: 0.5rem;
+      margin-bottom: 5rem;
+      i{
+        margin-left: 0.5rem;
+      }
+    }
+
+    //logos trust
+    .od-banner__trust{
+
+      p{
+        margin-right: 1rem;
+        margin-bottom: 0;
+
+        small{
+          font-size: 1.1rem;
+          line-height: 1;
+          font-weight: 700;
+        }
+      }
+
+      //logos
+      .od-banner__trust__logos{
+        position: relative;
+        li{
+          //margin: 0 1rem;
+          img{
+            width: 60px;
+            height: auto;
+          }
+        }
+      }
+
+
+    }
+  }
+
+  //right
+  .od-banner__right{
+
+    .od-card{
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: 2.5rem 2rem 3.5rem 2rem;
+      border-radius: 10px 10px 50px 10px;
+
+      h2,h3{
+        font-size: 1.4rem;
+        line-height: 1;
+        font-weight: 700;
+      }
+
+      //header
+      .od-card__header{
+        margin-bottom: 2rem;
+        .btn{
+          font-size: 1rem;
+          line-height: 1;
+          font-weight: 700;
+          border: 2px solid rgba($grey, 0.2);
+          padding: 0.8rem 1.6rem;
+          border-radius: 5px;
+          &:hover{
+            background-color: rgba($grey, 0.2);
+            border-color: transparent;
+          }
+        }
+      }
+      //card
+      .od-card__card{
+        display: block;
+        position: relative;
+        padding: 2rem;
+        border-radius: 10px;
+        overflow: hidden;
+
+        >img{
+          display: block;
+          position: absolute;
+          width: 300%;
+          height: auto;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          z-index: 0;
+          opacity: 0.1;
+        }
+
+        .od-card__label{
+          display: block;
+          position: relative;
+          margin-bottom: 0.5rem;
+          small{
+            font-size: 1rem;
+            text-transform: uppercase;
+          }
+        }
+
+        //header
+        .od-card__card__header{
+          position: relative;
+          margin-bottom: 2rem;
+          z-index: 1;
+          img{
+            display: block;
+            width: 30px;
+            height: auto;
+          }
+          .badge{
+            font-size: 1.2rem;
+            padding: 0.6rem;
+          }
+        }
+
+        //data
+        .od-card__card__data{
+          position: relative;
+          margin-bottom: 2rem;
+          z-index: 1;
+
+          div{
+            flex-wrap: nowrap;
+            .col-sm, .col-sm-auto{
+              //padding: 0;
+              text-align: center;
+              //padding-right: 1rem;
+            }
+            p{
+              font-size: 2rem;
+              font-weight: 700;
+              line-height: 1;
+            }
+
+          }
+
+        }
+
+        //footer
+        .od-card__card__footer{
+          position: relative;
+          margin-bottom: 2rem;
+          z-index: 1;
+          p:not(.od-card__label){
+            font-size: 1.5rem;
+            line-height: 1;
+            font-weight: 800;
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      //footer
+      .od-card__footer{
+
+        display: block;
+        position: relative;
+        .row{
+          padding-top: 1.2rem;
+          padding-bottom: 1.2rem;
+          .col-md{
+            h3{
+              margin-bottom: 0.3rem;
+            }
+            p{
+              font-size: 1.2rem;
+              color: $grey;
+            }
+          }
+          .col-sm-auto{
+            p{
+              font-size: 1.2rem;
+              line-height: 1;
+              font-weight: 700;
+            }
+          }
+        }
+        hr{
+          display: block;
+          margin: 0;
+          border: none;
+          width: 100%;
+          height: 1px;
+          background-color: rgba($grey, 0.2);
+        }
+
+        //btn
+        > a{
+          display: inline-block;
+          font-size: 1.2rem;
+          line-height: 1;
+          padding: 0.25rem 0;
+          margin-top: 1.5rem;
+          border-bottom: 1px dashed $blue-light;
+          &:hover{
+            text-decoration: none;
+            opacity: 0.6;
+          }
+          i{
+            font-size: 1rem;
+            line-height: 1.2rem;
+          }
+        }
+
+      }
+    }
+
+
+
+  }
+}
